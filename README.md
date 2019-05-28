@@ -6,4 +6,5 @@ The files in this repository are a collection of powershell scripts to Ivanti EP
 **USE AT YOUR OWN RISK**
 
 ## Scripts and Uses
-- Ivanti_EPM_TMC_Check.ps1 - Intended to be used as a work around for when the TMCsvc service gets messed up, causing SDClient or Vulscan to hang during the multicast phase of a deployment and causing subsequent tasks to queue indefinetly. 
+
+**- Ivanti_EPM_TMC_Check.ps1** - Intended to be used as a work around for when the TMCsvc service gets messed up, causing SDClient or Vulscan to hang during the multicast phase of a deployment and causing subsequent tasks to queue indefinetly. 
