@@ -29,8 +29,9 @@
 
 		- Windows Task Scheduler Task set to run as local system.
 		- EPM Managed Script deployment. Copy PS1 to local system and use managed script to execute. You cannot leverage the built in Windows PowerShell distribution method. This uses SDClient, which will not process if SDClient or Vulscan processes are hung. 
-		- AppSense Envioronment Manager. Use a dummy process (or some other process) to trigger the script using Environment Manager Policy, process started actions.
-		
+		- AppSense Envioronment Manager. 
+		  - Use a dummy process (or some other process) to trigger the script using Environment Manager Policy, process started actions.
+		  - Use a scheduled node in EM to setup a re-occuring task scheduler item (ref: https://www.youtube.com/watch?v=nT07mpCCL7A&feature=youtu.be&list=PLg6jGBN6NZrW5p_S-3PFN9pmh3x_VurbR)
 		Version 1.0 - Updated 5/24/2019
 		- Initial script posted for use.
 		
