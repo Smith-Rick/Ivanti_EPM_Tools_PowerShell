@@ -15,3 +15,5 @@ The files in this repository are a collection of powershell scripts to Ivanti EP
 
 **- setupcomplete.ps1** - Used with PostOOBE and a windows 10 in place upgrade. Simply create a setupcomplete.cmd file and copy it to the local device prior to the upgrade. The .CMD file needs one line:
 "powershell.exe -ExecutionPolicy ByPass -file C:\temp\Win10_1803\setupcomplete.ps1 -WindowStyle Hidden"
+
+**- Validate_LDISCNvroot.ps1** - Used as a DETECT ONLY custom security definition script. The script checks the ldiscn.vroot file and validates that the setting in the file is NOT the default LDCLIENTDIRECTORY value. Files in this state caused systems to have issues with downloading the LDAPPL3.ini from the core. Case was opened to determin root cause, however custom detection logic was required to identify broken systems. 
