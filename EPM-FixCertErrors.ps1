@@ -25,4 +25,4 @@ Get-ChildItem $BrokerFolderPath -Recurse | Where-Object { !$_.PSIsContainer } | 
 Get-ChildItem $CertFolderPath -Recurse | Where-Object { !$_.PSIsContainer } | Where-Object { $toKeep -notcontains $_.Name } | remove-item
 
 # Run Broker Config
-Start-Process -FilePath "C:\Program Files (x86)\LANDesk\LDClient\BrokerConfig.exe" -ArgumentList "-r"
+Start-Process -FilePath "C:\Program Files (x86)\LANDesk\LDClient\BrokerConfig.exe" -ArgumentList "/r"
