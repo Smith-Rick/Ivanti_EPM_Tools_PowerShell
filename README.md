@@ -7,6 +7,8 @@ The files in this repository are a collection of powershell scripts to Ivanti EP
 
 ## Scripts and Uses
 
+**- EPM-FixCertErrors.ps1** - Atempts to automate the repair of SOAPAction 503 errors as described in this KB: https://forums.ivanti.com/s/article/Error-Action-SOAPAction-http-tempuri-org-ResolveDeviceID-failed-socket-error-0-SOAPCLIENT-ERROR-5-Status-code-503-fault-string
+
 **- Ivanti_EPM_TMC_Check.ps1** - Intended to be used as a work around for when the TMCsvc service gets messed up, causing SDClient or Vulscan to hang during the multicast phase of a deployment and causing subsequent tasks to queue indefinetly. 
 
 **- Win10_1803_UpgradeViaEPMSecurityScan.ps1** - Used for windows 10 in place upgrade with command line switches. 
